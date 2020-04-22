@@ -46,11 +46,11 @@ test('renders counter display', () => {
   expect(counterDisplay.length).toBe(1);
 });
 
-// test('counters starts at 0', () => {
-//   const wrapper = setup;
-//   const appComponent2 = findByTestAttr(wrapper, 'counter-display')
-//   expect(appComponent2.length).toBe(1);
-// });
+test('counters starts at 0', () => {
+  const wrapper = setup();
+  const initialCounterState = wrapper.state('counter');
+  expect(initialCounterState).toBe(0);
+});
 
 // test('clicking button increments counter display', () => {
 //   const wrapper = setup;
