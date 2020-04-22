@@ -18,6 +18,10 @@ class App extends Component {
         <button
           data-test='increment-button'
           onClick={() => this.setState({ counter: this.state.counter + 1 })}
+        >+</button>
+        <button
+          data-test='decrement-button'
+          onClick={() => this.setState({ counter: this.state.counter - 1 })}
         ></button>
       </div>
     );
